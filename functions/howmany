@@ -1,0 +1,11 @@
+function howmany(){
+	if [[ $# -gt 0 ]]; then
+    	if [ "$1" = "d" ]; then 
+    		ls -1 -d */ | wc -l
+    	else
+    		find . -type f -name "*.$@" | wc -l
+    	fi
+  	else
+    	ls -1 | wc -l
+	fi
+}

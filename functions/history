@@ -1,0 +1,7 @@
+function h() {
+  if [[ $# -gt 0 ]]; then
+    history | grep "$@"
+  else
+    history
+  fi
+}

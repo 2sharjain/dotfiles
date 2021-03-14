@@ -1,0 +1,3 @@
+function cc(){
+	gcc-9 "$1.c" && ./a.out
+}

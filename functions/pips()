@@ -1,0 +1,3 @@
+function pips() {
+  pip freeze | grep $1;
+}

@@ -1,0 +1,3 @@
+function g(){
+	g++ "$1" && echo "Enter Input:" && ./a.out
+}

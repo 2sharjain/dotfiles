@@ -1,0 +1,31 @@
+#MY PROMPT
+coral=$(tput setaf 210);
+green=$(tput setaf 42);
+sand=$(tput setaf 215);
+cornflowerBlue=$(tput setaf 69);
+teal=$(tput setaf 6);
+gold=$(tput setaf 222);
+bold=$(tput bold);
+reset=$(tput sgr0);
+
+echo "${coral}$(hostname -s)";
+echo "${sand}$(date "+%A, %B %d, %Y")";
+echo "${green}${bold}$(date "+%H:%M")${reset}";
+
+PS1="\[${cornflowerBlue}\]\W/";
+PS1+="\[${teal}\] \u";
+PS1+="\[${gold}\]$ ";
+PS1+="\[${reset}\]";
+
+export PS1;
+#END OF MY PROMPT
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+alias python=python3
+alias cdc='cd /Users/tushar/Downloads/Code'
+alias up=caffeinate
+alias trash='open /Users/tushar/.Trash'
